@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction History</title>
+</head>
+<body>
+
+<h2>Transaction History</h2>
+
+<a href="/">Back to Home</a>
+
+<ul>
+    {% for t in transactions %}
+    <li>
+        {{ t.name }} - {{ t.category }} - ₹{{ t.price }}
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
